@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///F:/projects/nextjs/src/app/hotels/HotelBlock.js"],"sourcesContent":["\"use client\";\r\nimport Image from \"next/image\"\r\n\r\nexport default function HotelBlock({id, name, capacity}) {\r\n    const imageLoader = ({src}) => {\r\n        return `./public/${src}.png`\r\n    };\r\n    return(\r\n        <div>\r\n            <h2> {name} </h2>\r\n            <p> {capacity} </p>\r\n            <Image \r\n                src={id} \r\n                width={300} \r\n                height={300} \r\n                alt={\"test\"}\r\n                loader={imageLoader} \r\n            />\r\n        </div>\r\n    );\r\n}"],"names":[],"mappings":";;;;AACA;AADA;;;AAGe,SAAS,WAAW,EAAC,EAAE,EAAE,IAAI,EAAE,QAAQ,EAAC;IACnD,MAAM,cAAc,CAAC,EAAC,GAAG,EAAC;QACtB,OAAO,CAAC,SAAS,EAAE,IAAI,IAAI,CAAC;IAChC;IACA,qBACI,6LAAC;;0BACG,6LAAC;;oBAAG;oBAAE;oBAAK;;;;;;;0BACX,6LAAC;;oBAAE;oBAAE;oBAAS;;;;;;;0BACd,6LAAC,gIAAA,CAAA,UAAK;gBACF,KAAK;gBACL,OAAO;gBACP,QAAQ;gBACR,KAAK;gBACL,QAAQ;;;;;;;;;;;;AAIxB;KAjBwB","debugId":null}}]
+}
